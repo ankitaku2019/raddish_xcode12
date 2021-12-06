@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,7 +39,10 @@
 		06FEC31727556FCB004B8BB2 /* PantryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FEC31627556FCB004B8BB2 /* PantryTests.swift */; };
 		06FEC31C27556FF2004B8BB2 /* ServerResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FEC31B27556FF2004B8BB2 /* ServerResponseTests.swift */; };
 		06FEC32127557010004B8BB2 /* MealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FEC32027557010004B8BB2 /* MealTests.swift */; };
-		F31CA2BA2757EB9100E940C5 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CA2B92757EB9100E940C5 /* ViewModelTests.swift */; };
+		9EA65A22275EA2A9000606B6 /* SwiftyTesseract in Frameworks */ = {isa = PBXBuildFile; productRef = 9EA65A21275EA2A9000606B6 /* SwiftyTesseract */; };
+		9EA65A2F275EB0D6000606B6 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA65A2E275EB0D6000606B6 /* PhotoCaptureView.swift */; };
+		9EA65A34275EB10C000606B6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA65A33275EB10C000606B6 /* ImagePicker.swift */; };
+		9EA65A39275EB14E000606B6 /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA65A38275EB14E000606B6 /* ImagePickerCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 		06FEC31627556FCB004B8BB2 /* PantryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryTests.swift; sourceTree = "<group>"; };
 		06FEC31B27556FF2004B8BB2 /* ServerResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponseTests.swift; sourceTree = "<group>"; };
 		06FEC32027557010004B8BB2 /* MealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTests.swift; sourceTree = "<group>"; };
+		9EA65A2E275EB0D6000606B6 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		9EA65A33275EB10C000606B6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9EA65A38275EB14E000606B6 /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
 		F31CA2B92757EB9100E940C5 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA65A22275EA2A9000606B6 /* SwiftyTesseract in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +208,9 @@
 				06EAD31C273A0DE2004E1928 /* AddPantryItem.swift */,
 				06EAD326273A0E0C004E1928 /* PantryItemDetail.swift */,
 				069A55872744883400F14865 /* PantryContentView.swift */,
+				9EA65A2E275EB0D6000606B6 /* PhotoCaptureView.swift */,
+				9EA65A33275EB10C000606B6 /* ImagePicker.swift */,
+				9EA65A38275EB14E000606B6 /* ImagePickerCoordinator.swift */,
 			);
 			path = Pantry;
 			sourceTree = "<group>";
@@ -267,6 +277,9 @@
 			dependencies = (
 			);
 			name = raddish;
+			packageProductDependencies = (
+				9EA65A21275EA2A9000606B6 /* SwiftyTesseract */,
+			);
 			productName = raddish;
 			productReference = 06EAD2B6273A0BBF004E1928 /* raddish.app */;
 			productType = "com.apple.product-type.application";
@@ -338,6 +351,9 @@
 				Base,
 			);
 			mainGroup = 06EAD2AD273A0BBF004E1928;
+			packageReferences = (
+				9EA65A20275EA2A9000606B6 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */,
+			);
 			productRefGroup = 06EAD2B7273A0BBF004E1928 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,8 +396,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA65A2F275EB0D6000606B6 /* PhotoCaptureView.swift in Sources */,
 				06EAD2F2273A0C55004E1928 /* Meal.swift in Sources */,
 				06EAD313273A0DAB004E1928 /* Pantry.swift in Sources */,
+				9EA65A34275EB10C000606B6 /* ImagePicker.swift in Sources */,
 				06EAD32C273A0E28004E1928 /* RecipesView.swift in Sources */,
 				06BC4C59273CD299007C016A /* AsyncImageView.swift in Sources */,
 				069A55882744883400F14865 /* PantryContentView.swift in Sources */,
@@ -390,6 +408,7 @@
 				06EAD309273A0D4A004E1928 /* AnyGestureRecognizer.swift in Sources */,
 				069A557B2744753200F14865 /* RecipeInMealPlanView.swift in Sources */,
 				06EAD331273A0E3E004E1928 /* Recipe.swift in Sources */,
+				9EA65A39275EB14E000606B6 /* ImagePickerCoordinator.swift in Sources */,
 				06EAD2FF273A0CAB004E1928 /* SceneDelegate.swift in Sources */,
 				06EAD31D273A0DE2004E1928 /* AddPantryItem.swift in Sources */,
 				06EAD2C3273A0BC0004E1928 /* Persistence.swift in Sources */,
@@ -721,6 +740,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EA65A20275EA2A9000606B6 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyTesseract/SwiftyTesseract.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EA65A21275EA2A9000606B6 /* SwiftyTesseract */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EA65A20275EA2A9000606B6 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */;
+			productName = SwiftyTesseract;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		06EAD2C4273A0BC0004E1928 /* raddish.xcdatamodeld */ = {

@@ -24,11 +24,6 @@ struct PantryItemDetail: View {
       Text("Date added: " + pantryItem.displayDate())
       Text("Expiration date: " + pantryItem.displayExpDate())
         List {
-         //prof h: this bug could also be here
-//         ForEach(viewModel.mealIngredients, id: \.self) { meal in
-//                         let _ = print(meal.strMeal)
-//                         Text(meal.strMeal)
-//         }
          ForEach(viewModel.recipesIng) {recipe in
             NavigationLink(recipe.strMeal, destination: RecipeDetailsView(recipe: recipe, viewModel: viewModel))
              //{

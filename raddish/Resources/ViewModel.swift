@@ -503,6 +503,10 @@ func populateRecipes() {
             
         }
     }
+    
+    func processPhoto(_ image: UIImage) {
+        
+    }
   
   func getIngExp(_ name: String,_ purchDate: Date) -> Date {
     var result: Date
